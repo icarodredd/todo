@@ -24,13 +24,13 @@ describe('TasklistComponent', () => {
     const tasklistElement: HTMLElement = fixture.nativeElement;
     const pArray = tasklistElement.querySelectorAll('p')!;
     const p = pArray.item(0);
-    expect(p.textContent).toEqual('Tarefas criadas');
+    expect(p.textContent).toContain('Tarefas criadas');
   });
 
   it('should display a paragraph with a text of "Concluídas" and the number of tasks that are done', () => {
     const tasklistElement: HTMLElement = fixture.nativeElement;
     const pArray = tasklistElement.querySelectorAll('p')!;
     const p = pArray.item(1);
-    expect(p.textContent).toEqual('Concluídas');
+    expect(p.textContent).toContain('Concluídas');
   });
 });
