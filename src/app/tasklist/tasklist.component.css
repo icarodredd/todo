@@ -1,0 +1,36 @@
+p {
+  color: #4ea8de;
+}
+
+div {
+  width: 70%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  background-color: #808080;
+  color: #d9d9d9;
+  padding: 2px 9px 2px 8px;
+  border-radius: 50%;
+}
+
+aside {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  margin-top: 5px;
+  border-color: #808080;
+}
