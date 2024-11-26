@@ -1,0 +1,17 @@
+name: Continuos Integration
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  continuos-integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Using NodeJS
+        uses: actions/setup-node@v4.1.0
+        with:
+         node-version: 20.
+      - name: Run, install and build test
+        run:
+         npm install
+         npm run build
+         npm run test
